@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+body{
+    height: 100vh;
+}
+
+
+
+/*  code */
+
+#hero{
+    height: 100vh;
+    width: 100vw;
+    background-color: #dedede;
+}
+
+
+
+
+
+header{
+    min-height: fit-content;
+    padding: 20px;
+}
+
+ul.nav{
+    /* background-color: red; */
+    border-radius: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 120px;
+    list-style: none;
+    gap: 1vw;
+    position: relative;
+    min-height: fit-content ;
+    height: 80px;
+    background-color: white;
+
+
+
+
+}
+
+
+ul.nav a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5394FF;
+    font-weight: 500;
+    position: relative;
+
+    & img{
+        height: 30px;
+        margin-bottom: -5px;
+        transition: 0.2s all ease-in-out;
+    }
+}
+
+
+ul.nav a:hover .nav-popup {
+    /* background-color: red; */
+    display: block;
+}
+ul.nav a:hover img {
+    /* background-color: red; */
+    transform: rotate(180deg);
+    /* display: block; */
+}
+
+ul.nav li:last-child{
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: #5394FF;
+    /* color: white; */
+
+    & a{
+        color: white;
+    }
+}
+
+ul.nav img#logo{
+    position: absolute;
+    left: 120px;
+    top: 5px;
+    height: 70px;
+}
+
+
+
+.nav-popup{
+    height: 200px;
+    width: 190px;
+    position: absolute;
+    bottom: -210px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: gray;
+    right: auto;
+    /* opacity: 0; */
+    display: none;
+}
+
