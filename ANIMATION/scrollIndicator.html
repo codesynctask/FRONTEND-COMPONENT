@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 300vh;
+            position: relative;
+        }
+
+        .scroll-top {
+            height: 20px;
+            width: 100vw;
+            position: sticky;
+            top: 0px;
+            /* background-color: red; */
+            border: 2px solid;
+
+
+
+        }
+
+        .fill {
+            height: 100%;
+            width: 0%;
+            animation-name: showScroll;
+            animation-duration: 2s;
+            animation-timeline: scroll();
+            animation-range:  0%  100%;
+            background-color: red;
+        }
+
+
+
+
+
+
+        @keyframes showScroll {
+            from {
+                width: 0%;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="scroll-top">
+        <div class="fill"></div>
+    </div>
+</body>
+
+</html>

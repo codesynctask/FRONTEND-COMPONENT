@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: #111;
+            padding: 10px;
+            overflow-x: hidden;
+        }
+
+        .text{
+            color: white;
+            margin: auto;
+            text-align: center;
+            margin-top: 40%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+            
+        }
+        
+        
+        span{
+            
+            animation-name: loading-text;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            position: relative;
+            animation-iteration-count: infinite;
+
+        }
+
+        .l{
+            animation-delay: 1s;
+        }
+        .o{
+            animation-delay: 1.5s;
+        }
+        .a{
+            animation-delay: 3s;
+        }
+        .d{
+            animation-delay: 3.5s;
+        }
+        .i{
+            animation-delay: 4s;
+        }
+        .n{
+            animation-delay: 4.5s;
+        }
+        .g{
+            animation-delay: 5s;
+        }
+
+
+        @keyframes loading-text {
+            0%{
+                top: 0;
+            }
+            50%{
+                top: -10px;
+            }
+            100%{
+                top: 0;
+            }
+        }
+    </style>  
+</head> 
+
+<body>
+   
+    <h2 class="text">
+        <span class="l">L</span>
+        <span class="o">O</span>
+        <span class="a">A</span>
+        <span class="d">D</span>
+        <span class="i">I</span>
+        <span class="n">N</span>
+        <span class="g">G</span>
+    </h2>
+</body>
+
+</html>

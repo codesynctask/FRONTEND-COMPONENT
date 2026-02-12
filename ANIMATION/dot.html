@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #111;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cont{
+            height: 30px;
+            width: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .dot{
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            border-radius: 50%;
+            animation-name: load;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .a{
+            animation-delay: 0s;
+        }
+
+        .b{
+            animation-delay: .2s;
+        }
+        .c{
+            animation-delay: .4s;
+        }
+
+
+        @keyframes load {
+            from{
+                transform: translateY(0px);
+                opacity: 1;
+            }
+            to{
+                transform: translateY(10px);
+                opacity: .5;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cont">
+        <div class="dot a"></div>
+        <div class="dot b"></div>
+        <div class="dot c"></div>
+    </div>
+</body>
+</html>

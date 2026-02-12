@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111;
+        }
+        .loader{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 5px solid #313131;
+            border-top-color: rgb(0, 251, 255);
+
+            /* animation property */
+            animation-name: loader;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: reverse;
+        }
+
+
+
+        
+        @keyframes loader {
+            from{
+                transform: rotate(0deg);
+            }
+            from{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader"></div>
+     <!-- <img src="https://media.giphy.com/media/H4E66ncnNsq3e/giphy.gif" alt=""> -->
+</body>
+
+</html>

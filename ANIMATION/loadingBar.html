@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform , transition and animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            background-color: #111;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bar{
+            width: 400px;
+            height: 40px;
+            border: 2px solid;
+            border-radius: 10px;
+            overflow: hidden;
+
+        }
+
+        .progress{
+            height: 100%;
+            background-color: white;
+            animation-name: progress;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+        }
+        /* ANIMATION */
+        @keyframes progress {
+            0%{
+                width: 0%;
+            }
+            100%{
+            width: 100%;
+            }
+        }
+
+
+
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <div class="progress"></div>
+    </div>
+</body>
+</html>
+
+
+<!-- animation and transition -->
