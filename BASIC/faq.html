@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+    <style>
+        .faq-item{
+            border: 2px solid;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+            width: 300px;
+            height: 20px;
+            /* 150px */
+            overflow: hidden;
+            transition: 0.4s all ease-in-out;
+
+        }
+
+        i{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.3);
+            }
+        }
+    </style>
+
+  </head>
+  <body>
+    <section>
+      <p class="label">FAQ</p>
+      <h1>Answers to our frequently asked questions</h1>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span class="faq-question">Is this product for me?</span>
+            <span class="faq-icon">
+            </span>
+          </button>
+          <div class="faq-body" role="region">
+            <div class="faq-body-inner">
+              <i class="ri-add-large-fill"></i>
+              <p class="faq-answer">
+                This product is designed for developers, designers, and teams
+                who want to build beautiful, high-performance interfaces without
+                spending hours on setup and configuration. If you value clean
+                code and great aesthetics, this is for you.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item ">
+          <button class="faq-trigger" aria-expanded="true">
+            <span class="faq-question">What is Tailwind CSS?</span>
+            <span class="faq-icon">
+            </span>
+          </button>
+          <div class="faq-body " role="region">
+            <div class="faq-body-inner ">
+              <i class="ri-add-large-fill"></i>
+              <p class="faq-answer">
+                Tailwind CSS is a CSS framework like Bootstrap, that speeds up
+                development time for developers. Tailwind CSS uses classes to
+                style elements, meaning you do not have to write any CSS.
+              </p>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+    </section>
+    <script>
+
+        const plusIconClass = "ri-add-large-fill"
+        const minusIconClass = "ri-subtract-line"
+
+        const allIcons = document.querySelectorAll("i")
+
+        allIcons.forEach((i)=>[
+            i.addEventListener('click',()=>{
+                if (i.getAttribute('class')===minusIconClass) {
+                    // when icon shows - symbol
+                    i.setAttribute("class",plusIconClass)
+                    const parentFaqItem = i.parentElement.parentElement.parentElement
+                    parentFaqItem.style.height="20px"
+                    
+                }else{
+                    // when icon shows + symbol
+                    i.setAttribute("class",minusIconClass)
+                    const parentFaqItem = i.parentElement.parentElement.parentElement
+                    parentFaqItem.style.height="150px"
+                }
+            })
+        ])
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

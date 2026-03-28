@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        button{
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .pop-up{
+                border-radius: 10px;
+            height: 80vh;
+            width: 80vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #beb9b9;
+            display: none;
+        }
+        span{
+            display: block;
+            padding: 10px;
+            border: 2px solid;
+            width: 30px;
+            height: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <button>Show POP-UP</button>
+
+    <div class="pop-up">
+        <span>x</span>
+    </div>
+
+
+    <script>
+        const popUpBtn = document.querySelector("button")
+        const popUpCloseBtn = document.querySelector("span")
+        const popUpBox = document.querySelector(".pop-up")
+
+        popUpBtn.addEventListener("click",function () {
+            popUpBox.style.display="flex"
+        })
+        popUpCloseBtn.addEventListener("click",function () {
+            popUpBox.style.display="none"
+        })
+    </script>
+</body>
+</html>
