@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+/* debbuging */
+/* div,nav,section,footer,header{
+    border: 2px solid black;
+} */
+
+
+a{
+    text-decoration: none;
+}
+
