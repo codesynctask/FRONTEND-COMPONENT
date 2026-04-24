@@ -2,4 +2,82 @@
     height: 100vh;
     background-color: #d3cfcf;
     border-radius: 20px;
+    position: relative;
+    font-size: 1rem;
+}
+
+#hero img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%,-50%);
+    width: 40vw;
+    filter: drop-shadow(5px 20px 20px rgba(0,0,0,0.4));
+    z-index: 2;
+}
+
+#hero .hero-text{
+    width: 40vw;
+    position: absolute;
+    left: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    z-index: 1;
+
+
+
+    & h3{
+        color: rgb(52, 49, 49);
+        text-transform: capitalize;
+        font-size: 1.8vw;
+        line-height: 4vh;
+    }
+    & h2{
+        color: black;
+        text-transform: capitalize;
+        font-size: 5vw;
+        line-height: 10vh;
+    }
+    & h1{
+        color: white;
+        text-transform: uppercase;
+        font-size: 14vw;
+        line-height: 25vh;
+    }
+
+    & button{
+        background-color: orangered;
+        padding: 15px 20px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        text-transform: capitalize;
+        font-size: 1em;
+        margin-top: 10px;
+        cursor: pointer;
+
+    }
+
+    & button:hover{
+        background-color: rgb(194, 59, 9);
+    }
+
+
+}
+
+
+
+#hero .desc-cont{
+    width: 20vw;
+    position: absolute;
+    right: 5vw;
+    bottom: 14vh;
+    padding: 20px;
+    text-align: right;
+
+    & h5{
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
 }
