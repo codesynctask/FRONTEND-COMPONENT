@@ -8,6 +8,7 @@
 
 body{
     height: 100vh;
+    min-height: fit-content;
     scroll-behavior: smooth;
     padding: 20px;
 }

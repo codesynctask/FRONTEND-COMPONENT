@@ -11,8 +11,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-40%,-50%);
-    width: 40vw;
-    filter: drop-shadow(5px 20px 20px rgba(0,0,0,0.4));
+    width: 50vw;
+    filter: drop-shadow(-60px 80px 10px rgba(0,0,0,0.4));
     z-index: 2;
 }
 
