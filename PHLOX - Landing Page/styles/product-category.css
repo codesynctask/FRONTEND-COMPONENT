@@ -1,19 +1,22 @@
 .product-category{
-    height: 100vh;
+    height: fit-content;
 }
 
 .category{
-    height: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50vh 50vh;
     gap: 10px;
-    padding: 10px;
+    padding: 10px 0;
 
 }
 
 .category > div{
-    background-color: #cccccc;
+    background-color: var(--bg-color);
     border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid;
 
 }
 
@@ -41,4 +44,47 @@
 .bottom .delivery-items i{
     font-size: 50px;
     color: orangered;
+}
+
+.category > div img{
+    height: 100%;
+    transform: translateX(-50%);
+    left: 60%;
+    position: absolute;
+}
+
+#first{
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+
+    & .cont{
+        margin: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 5px;
+
+        & h3{
+            font-weight: 100;
+            font-size: 0.8em;
+        }
+        & h1{
+            opacity: .5;
+            text-transform: uppercase;
+            font-size: 3.5em;
+            font-weight: 900;
+        }
+        & button{
+            padding: 10px 30px ;
+            background-color: red;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            border-radius: 20px;
+        }
+    }
 }
