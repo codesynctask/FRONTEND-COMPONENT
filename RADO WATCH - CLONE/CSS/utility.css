@@ -1,0 +1,15 @@
+.x-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.rotate-icon-on-hover i{
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.rotate-icon-on-hover:hover i{
+    transform: rotate(180deg);
+}
