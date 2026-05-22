@@ -12,8 +12,8 @@
 
 <body class="px-[7vw]">
     <!-- HEADER -->
-    <header>
-        <nav class="flex justify-between items-center p-4 relative">
+    <header class="">
+        <nav class="flex justify-between items-center p-4 relative border-b-1 border-gray-300">
             <div class="flex gap-2 text-xl uppercase">
                 <div class="pr-5 border-r-4 cursor-pointer hover:scale-105">
                     <i class="ri-menu-line"></i> <span class="hidden md:inline-block">menu</span>
@@ -29,15 +29,54 @@
                 <a href=""><i class="ri-poker-hearts-line"></i></a>
             </div>
         </nav>
+
+        <div class="mobile-nav hidden z-99  h-[90vh] w-[380px] bg-white fixed left-0 ">
+            <div class="top  h-[65%]  flex flex-col justify-end text-xl pb-[10%] px-10">
+                <div class="border-b-2 flex justify-between items-center uppercase py-4">
+                    text
+                    <i class="ri-arrow-right-s-line text-3xl"></i>
+                </div>
+                <div class="border-b-2 flex justify-between items-center uppercase py-4">
+                    text
+                    <i class="ri-arrow-right-s-line text-3xl"></i>
+                </div>
+                <div class="border-b-2 flex justify-between items-center uppercase py-4">
+                    text
+                    <i class="ri-arrow-right-s-line text-3xl"></i>
+                </div>
+                <div class="border-b-2 flex justify-between items-center uppercase py-4">
+                    text
+                    <i class="ri-arrow-right-s-line text-3xl"></i>
+                </div>
+                <div class="border-b-2 flex justify-between items-center uppercase py-4">
+                    text
+                    <i class="ri-arrow-right-s-line text-3xl"></i>
+                </div>
+            </div>
+
+            <div class="border-t-1 bg-white border-gray-300 bottom h-[35%] flex  flex-col text-xl py-4 px-10">
+                <div class="h-full flex gap-4 items-center">
+                    <i class="ri-map-pin-line text-2xl"></i> Store Finder
+                </div>
+                <div class=" h-full flex gap-4 items-center">
+                    <i class="ri-phone-line text-2xl"></i> Call Us
+                </div>
+                <div class=" h-full flex gap-4 items-center">
+                    <i class="ri-global-line text-2xl"></i> Region
+                </div>
+            </div>
+        </div>
     </header>
+
 
     <!-- HERO HEAD -->
     <div class="text-center md:px-9 my-10 md:my-4 md:mt-[10vh]">
+
         <h2 class="text-4xl uppercase">Men's Watches</h2>
         <div class="md:w-1/2 mx-auto">
             <p class="text-base tracking-0.04 font-helvetica-light text-primary mb-6 cursor-pointer">
                 Explore Rado's men's watches, a fusion of precision engineering and
-                mastery of materials. Rado watches ...Read More</p>
+                <span id="updateText">mastery of materials. Rado watches</span> <span id="changeTextBtn">...Read More</span></p>
         </div>
     </div>
 
@@ -45,7 +84,7 @@
 
     <!-- FILTER -->
     <div class="mt-5 h-[70px] flex justify-between items-start gap-2 flex-col  min-h-fit lg:flex-row">
-        <div class=" flex justify-center items-center px-3 hover:bg-gray-300 cursor-pointer text-xl relative">
+        <div class="filter-cont flex justify-center items-center px-3 hover:bg-gray-300 cursor-pointer text-xl relative">
             RELEVANCE <span class="text-[30px] block mt-1"><i class="ri-arrow-down-s-line"></i></span>
             <ul class="text-sm capitalize absolute top-[100%] w-full bg-white hidden ">
                 <li class="border w-full font-bold p-3 pl-6">High Price</li>
@@ -54,7 +93,7 @@
         </div>
 
         <div class=" flex gap-4">
-            <div class="rotate-icon-on-hover flex justify-center items-center px-3 hover:bg-gray-300 cursor-pointer text-sm relative">
+            <div class="filter-cont rotate-icon-on-hover flex justify-center items-center px-3 hover:bg-gray-300 cursor-pointer text-sm relative">
                 GENDER <span class="text-[30px] block mt-1"><i class="ri-arrow-down-s-line transition-all duration-300 ease-in-out"></i></span>
                 <ul class="text-sm capitalize absolute top-[100%] w-full bg-white hidden ">
                     <li class="border w-full font-bold p-3 pl-6">Male</li>
@@ -62,14 +101,14 @@
                     <li class="border w-full font-bold p-3 pl-6">Unisex</li>
                 </ul>
             </div>
-            <div class="rotate-icon-on-hover flex justify-center items-center px-3 hover:bg-gray-300 cursor-pointer text-sm relative">
+            <div class="filter-cont rotate-icon-on-hover flex justify-center items-center px-3 hover:bg-gray-300 cursor-pointer text-sm relative">
                 COLURED <span class="text-[30px] block mt-1"><i class="ri-arrow-down-s-line transition-all duration-300 ease-in-out"></i></span>
                 <ul class="text-sm capitalize absolute top-[100%] w-full bg-white hidden ">
                     <li class="border w-full font-bold p-3 pl-6">Light</li>
                     <li class="border w-full font-bold p-3 pl-6">Dark</li>
                 </ul>
             </div>
-            <div class="rotate-icon-on-hover flex justify-center items-center px-3 hover:bg-gray-300 cursor-pointer text-sm relative">
+            <div class="filter-cont rotate-icon-on-hover flex justify-center items-center px-3 hover:bg-gray-300 cursor-pointer text-sm relative">
                 CASE SHAPE <span class="text-[30px] block mt-1"><i class="ri-arrow-down-s-line transition-all duration-300 ease-in-out"></i></span>
                 <ul class="text-sm capitalize absolute top-[100%] w-full bg-white hidden ">
                     <li class="border w-full font-bold p-3 pl-6">Round</li>
@@ -247,6 +286,9 @@
 
         </div>
     </footer>
+
+    <script src="./JS/text.js"></script>
+    <script src="./JS/filters.js"></script>
 
 </body>
 
