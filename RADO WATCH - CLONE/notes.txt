@@ -1,0 +1,5 @@
+SERIES DATA(index) - array
+data name ---- object
+
+
+["p1","p2","p3"]
