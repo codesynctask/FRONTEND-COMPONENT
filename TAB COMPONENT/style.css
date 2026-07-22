@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont{
+    border: 2px solid black;
+    height: 360px;
+    width: 90vw;
+    max-width: 700px;
+}
+
+.cont .tab-wrapper{
+    height: 15%;
+    border: 2px solid ;
+    display: flex;
+}
+.cont .details{
+    height: 85%;
+    border: 2px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs{
+    height: 100%;
+    width: calc(100% / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.active{
+    background-color: cyan;
+}

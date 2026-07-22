@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+body {
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+p{
+    font-size: 0.9em;
+    line-height: 30px;
+}
+
+/*  CODE START */
+body > h1,
+body > p {
+  text-align: center;
+}
+
+.cont {
+  height: 60vh;
+  width: 58vw;
+  margin: 0 auto;
+  margin-top: 2vh;
+  display: flex;
+  gap: 15px;
+}
+
+.card {
+  width: calc(100% / 3);
+  height: 100%;
+  border: 1px solid rgba(168, 166, 166, 0.5);
+  border-radius: 10px;
+  padding: 25px;
+}
+.mid {
+  background-color: rgb(3, 9, 26);
+}
+
+
+.card h1{
+    font-size: 3em;
+}
+
+.card p{
+    color: rgb(99, 99, 99);
+}
+
+.card button{
+    width: 100%;
+    margin-block: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    background-color: white;
+    border: 2px solid gray;
+}
+
+.card h1+p{
+    line-height: 22px;
+}
+
+.mid{
+  color: white;
+}
+.mid button{
+  border: none;
+}
+
+.mid p{
+  color: rgb(220, 220, 220);
+}
